@@ -16,7 +16,7 @@ public class ZombieSpawn : MonoBehaviour
 
     IEnumerator Spawn()
     {
-        while (zombieCount < 70)
+        while (zombieCount < 10)
         {
             xPos = Random.Range(-21, 55);
             zPos = Random.Range(-32, 47);

@@ -9,6 +9,7 @@ public class Loot : MonoBehaviour
     public GameObject uiButton;
     private ThirdPersonShooterController thirdPersonShooterController;
     private StarterAssetsInputs starterAssetsInputs;
+    private bool test;
     private void Start()
     {
         uiButton.SetActive(false);
@@ -30,7 +31,6 @@ public class Loot : MonoBehaviour
             thirdPersonShooterController.arrowCount += 2;
         }
     }
-    private bool test;
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Chest")

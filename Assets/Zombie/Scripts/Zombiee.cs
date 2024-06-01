@@ -13,6 +13,7 @@ public class Zombiee : MonoBehaviour
     private Transform player;
     public Transform zombie;
     public GameObject pelvis;
+    public static int zombieDieCounter;
 
     private void Start()
     {
@@ -75,6 +76,7 @@ public class Zombiee : MonoBehaviour
         {
             animator.SetTrigger("die");
             Destroy(gameObject, 30);
+            zombieDieCounter += 1;
         }
         else
         {
