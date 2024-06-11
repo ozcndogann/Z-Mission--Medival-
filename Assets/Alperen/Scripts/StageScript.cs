@@ -93,6 +93,18 @@ public class StageScript : MonoBehaviour
 
             timerText.text = string.Format("{0:00}:{1:00}", displayMinutes, displaySeconds); // Dakika ve saniyeleri formatla
         }
+        else if (Zombiee.zombieDieCounter == 30 && StageCounter == 3)
+        {
+            timerText.text = "To be continued !";
+            passedShower += Time.deltaTime;
+            if (passedShower > 25)
+            {
+                stageShower = 0;
+                StageCounter++;
+                passedShower = 0;
+            }
+
+        }
         else
         {
             timerText.text = "00:00 loli"; // Süre bittiðinde gösterilecek metin
