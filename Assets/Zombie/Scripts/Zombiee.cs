@@ -14,9 +14,12 @@ public class Zombiee : MonoBehaviour
     public Transform zombie;
     public GameObject pelvis;
     public static int zombieDieCounter;
+    public static float chaseRange;
+    public float usefulChaseRange;
 
     private void Start()
     {
+        chaseRange = usefulChaseRange;
         pelvis.SetActive(true);
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
@@ -32,7 +35,7 @@ public class Zombiee : MonoBehaviour
 
         if (!(dotPro <=0.4 && dotPro >= 0) && StarterAssetsInputs.crouch )
         {
-            walk.chaseRange = 4;
+            chaseRange = 4;
         }
 
         //if (animator.GetBehaviour<attack>().test == true)

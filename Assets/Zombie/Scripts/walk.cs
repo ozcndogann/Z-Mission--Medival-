@@ -9,7 +9,7 @@ public class walk : StateMachineBehaviour
     NavMeshAgent agent;
     public static Vector3 Position;
     Transform player;
-    public static float chaseRange = 25;
+    
 
     
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -33,7 +33,7 @@ public class walk : StateMachineBehaviour
         
 
         float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance < chaseRange)
+        if (distance < Zombiee.chaseRange)
         {
             animator.SetBool("isChasing", true);
         }

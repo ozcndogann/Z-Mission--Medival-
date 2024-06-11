@@ -3820,6 +3820,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 817110994}
     m_Modifications:
+    - target: {fileID: 4264878140089617390, guid: 5f8278cced535464e9534afd820f2844, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697611221110254303, guid: 5f8278cced535464e9534afd820f2844, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855993743766307144, guid: 5f8278cced535464e9534afd820f2844, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8897185567621363051, guid: 5f8278cced535464e9534afd820f2844, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3867,6 +3879,10 @@ PrefabInstance:
     - target: {fileID: 8897185567621363052, guid: 5f8278cced535464e9534afd820f2844, type: 3}
       propertyPath: m_Name
       value: Buildings
+      objectReference: {fileID: 0}
+    - target: {fileID: 8897185567966991057, guid: 5f8278cced535464e9534afd820f2844, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f8278cced535464e9534afd820f2844, type: 3}
@@ -4333,7 +4349,9 @@ MonoBehaviour:
   minutes: 5
   seconds: 0
   timerText: {fileID: 1196396291}
+  missionText: {fileID: 1481098744}
   stageShower: 0
+  passedShower: 0
 --- !u!1001 &1221041499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6297,6 +6315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombie: {fileID: 8298263018322723112, guid: 553392f2729d34b49b55c711b53a4903, type: 3}
+  stage2zombie: {fileID: 8298263018322723112, guid: 3dd8f1c77bed70948a1965fa875b1c94, type: 3}
+  stage3zombie: {fileID: 8298263018322723112, guid: 585f84ba1ecdd3443bc8a7a4f04ea257, type: 3}
 --- !u!4 &1964045680
 Transform:
   m_ObjectHideFlags: 0

@@ -2610,7 +2610,7 @@ GameObject:
   - component: {fileID: 7535364708733926980}
   - component: {fileID: 7535364708733926978}
   m_Layer: 6
-  m_Name: Zombie
+  m_Name: Stage3Zombie
   m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2665,10 +2665,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.8
+  m_Speed: 1.8
   m_Acceleration: 5
   avoidancePriority: 50
-  m_AngularSpeed: 80
+  m_AngularSpeed: 180
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -2689,12 +2689,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0297f45d8cf9f429a9ff6d1573a659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
+  HP: 150
   healthBar: {fileID: 7535364708394418322}
   animator: {fileID: 2453190735888520}
   zombie: {fileID: 5004066427380298555}
   pelvis: {fileID: 6055148915347234373}
-  usefulChaseRange: 25
+  usefulChaseRange: 65
   hitBoxes:
   - {fileID: 7535364708902245674}
   - {fileID: 7535364708583742574}
